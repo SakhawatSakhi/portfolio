@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="assets/Profile.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-[var(--themeColor)] flex flex-col gap-8">
+  <header
+    class="header min-h-[65px] fixed top-0 w-full  bg-[#002B31] z-50 shadow-md flex items-center flex-wrap px-4 md:px-8">
+    <nav class="flex items-center gap-4 justify-between w-full max-w-[1530px] m-auto flex-wrap">
+      <a href="" class="font-bold text-white text-base">Sakhawat Ali's Portfolio</a>
+      <div class="rightSide hidden gap-4 flex-wrap md:gap-8 md:flex">
+        <a href="#heroSection" class="hover:text-[#FFD700] text-white transition hover:underline">Home</a>
+        <a href="#educationSection" class="hover:text-[#FFD700] text-white transition hover:underline">Education</a>
+        <a href="#skillSection" class="hover:text-[#FFD700] text-white transition hover:underline">Skills</a>
+        <a href="#projectSection" class="hover:text-[#FFD700] text-white transition hover:underline">Projects</a>
+        <a href="#certificateSection"
+          class="hover:text-[#FFD700] text-white transition hover:underline">Certificates</a>
+        <a href="#contactSection" class="hover:text-[#FFD700] text-white transition hover:underline">Contact</a>
+      </div>
+      <i id="menu" class="text-white fa-solid fa-bars text-2xl md:!hidden"></i>
+    </nav>
+
+    <div id="mobile-menu"
+      class="fixed top-0 right-0 z-50 h-full w-1/2 bg-[#002B31] shadow-lg flex flex-col gap-4 p-8 text-black transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
+      <div class="wrap flex justify-between">
+        <img class="absolute top-4 left-4" src="asset 8.svg" alt="">
+        <i id="close-btn" class="fa-regular fa-circle-xmark  absolute top-4 right-4 text-3xl text-white"></i>
+        <!-- <button  id="close-btn" class="absolute top-4 right-4 text-5xl text-white">&times;</button> -->
+      </div>
+
+      <nav class="mt-8 flex flex-col space-y-6 p-0">
+        <a href="#heroSection" class="hover:text-[#FFD700] text-white">Home</a>
+        <a href="#educationSection" class="hover:text-[#FFD700] text-white">Education</a>
+        <a href="#skillSection" class="hover:text-[#FFD700] text-white">Skills</a>
+        <a href="#projectSection" class="hover:text-[#FFD700] text-white">Projects</a>
+        <a href="#certificateSection" class="hover:text-[#FFD700] text-white">Certificates</a>
+        <a href="#contactSection" class="hover:text-[#FFD700] text-white">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="px-4 w-full max-w-[1530px] mx-auto md:px-8">
+    <section id="heroSection"
+      class="mt-28 heroSection flex flex-col gap-8 items-center md:flex-row md:gap-12 md:justify-between lg:px-8">
+      <div class="top flex flex-col gap-8 items-center w-full max-w-[350px]">
+        <img id="Profile_img" class="px-4 w-full max-w-[350px] md:px-0" src="assets/Profile.png" alt="profile pic">
+
+        <div class="logoContainer flex gap-12 px-8 items-center">
+          <!-- GitHub Icon -->
+          <a target="_blank" href="https://github.com/SakhawatSakhi">
+            <i
+              class="fa-brands fa-github text-[var(--primaryColor)] text-5xl above420:text-6xl active:text-[var(--btnActiveColor)]"></i>
+          </a>
+
+          <!-- WhatsApp Icon -->
+          <a target="_blank"
+            href="https://wa.me/923412428786?text=Hi%20there!%20I%20would%20like%20to%20get%20in%20touch%20with%20you.">
+            <i
+              class="fa-brands fa-whatsapp text-[var(--primaryColor)] text-5xl above420:text-6xl active:text-[var(--btnActiveColor)]"></i>
+          </a>
+
+          <!-- LinkedIn Icon -->
+          <a id="linkdinIcon" target="_blank" href="https://www.linkedin.com/in/sakhi786/">
+            <img class="above420:w-[60px]" width="48px" src="assets/icons/linkdin.svg" alt="LinkedIn Icon">
+          </a>
+        </div>
+        <!-- Facebook Icon -->
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100010568730827&mibextid=ZbWKwL">
+          <i
+            class="fa-brands fa-facebook text-[var(--primaryColor)] text-5xl above420:text-6xl active:text-[var(--btnActiveColor)]"></i>
+        </a>
+
+        <!-- Hire Me Button -->
+        <!-- <a target="_blank"
+          href="Fiverr link">
+          <button
+            class="bg-[var(--primaryColor)] rounded-full px-12 py-4 text-[#695900] font-semibold active:bg-[var(--btnActiveColor)]">
+            HIRE ME
+          </button>
+        </a> -->
+      </div>
+
+      <div class="bottomContainer flex flex-col gap-4 h-full md:w-1/2">
+        <h1 class="leading-relaxed px-6 text-2xl font-bold text-center md:text-left md:px-0 md:text-5xl">Hi, I am <span
+            class="text-[var(--primaryColor)]">Sakhawat Ali</span>
+          and I am a passionate <br> <span class="text-[var(--primaryColor)] mt-12" id="element"></span></h1>
+        <p>Hi! I'm Sakhawat Ali, a web developer with 1 year of experience specializing in HTML, CSS, Bootstrap,
+          JavaScript, MySQL, and backend development using PHP. I also have experience with React and Node.js for
+          creating responsive front-end Website.</p>
+
+        <a class="self-center md:self-start" href="Sakhawat CV.pdf"><button
+            class="bg-[var(--primaryColor)] rounded-full px-12 py-4 text-[#695900] font-semibold mt-4 active:bg-[var(--btnActiveColor)]">DOWNLOAD
+            CV</button></a>
+      </div>
+    </section>
+
+    <hr class="mt-12">
+    <!-- EDUCATION Section -->
+    <section id="educationSection" class="educationSection mt-12 gap-4 flex flex-col items-center">
+      <h1 class="font-bold text-3xl">EDUCATION</h1>
+      <p>With a strong foundation in Computer Science, I stay up-to-date with the latest technologies and best
+        practices. My continuous learning and professional development ensure I deliver cutting-edge solutions and
+        exceptional results.</p>
+      <div
+        class="relative educationContainer flex flex-col gap-4 justify-center mt-12 flex-wrap px-4 md:flex-row md:gap-8">
+        <div
+          class="educationleftBtn z-10 absolute -left-4 top-[180px] rightArrow w-full max-w-20  h-full max-h-20 bg-[#0e4b4b] shadow-2xl rounded-full flex justify-center items-center text-[var(--primaryColor)] text-4xl font-bold md:hidden">
+          &lt;</div>
+        <div
+          class="educationRightBtn z-10 absolute -right-4 top-[180px] rightArrow  w-full max-w-20  h-full max-h-20 bg-[#0e4b4b] shadow-2xl rounded-full flex justify-center items-center text-[var(--primaryColor)] text-4xl font-bold md:hidden">
+          ></div>
+
+        <div data-aos="fade-right" data-aos-duration="1000"
+          class="matrixBox relative flex flex-col gap-4 bg-[#0a3336] shadow-xl w-full max-w-[350px] h-[450px] rounded-2xl items-center p-8">
+          <button
+            class="closeMatricBtn hidden bg-[var(--themeColor)] rounded-full w-10 h-10  z-20 absolute top-0 right-0 text-2xl text-[var(--primaryColor)]">&times;</button>
+          <img class="hidden absolute top-0  z-10 matricCard w-screen h-[450px]" src="assets/MrtCard.jpg" alt="">
+          <div class="outer_border">
+            <div class="iner_border">
+              <span>57%</span>
+            </div>
+          </div>
+          <p class="font-bold text-white text-2xl mt-2">Matriculation</p>
+          <p class="text-[#FFFFB5] px-8">Completed Matriculation from Government Boys High School Tormik. -2018</p>
+          <button id="matrixVerify"
+            class="bg-[var(--primaryColor)] rounded-full mt-auto px-12 py-4 text-[#695900] font-semibold active:bg-[var(--btnActiveColor)]">Verify
+            Now</button>
+        </div>
+
+        <div data-aos="fade-right" data-aos-duration="1000"
+          class="hidden interBox shadow-xl flex-col relative gap-4 bg-[var(--secondaryColor)] w-full max-w-[350px] h-[450px] rounded-2xl pt-6 items-center p-8 md:flex">
+          <button
+            class="closeinterBtn hidden bg-[var(--themeColor)] rounded-full w-10 h-10  z-20 absolute top-0 right-0 text-2xl text-[var(--primaryColor)]">&times;</button>
+          <img class="hidden absolute top-0 z-10 interCard w-screen h-[450px]" src="assets/FasCard.png" alt="">
+          <div class="outer_border">
+            <div class="iner_border">
+              <span>60%</span>
+            </div>
+          </div>
+          <p class="font-bold text-white text-2xl mt-2">Intermediate</p>
+          <p class="text-[#FFFFB5] px-8">Completed Intermediate in Pre-Engineering from Government Boys Degree College
+            Skardu. -2020</p>
+          <button
+            class="interVerifyBtn bg-[var(--primaryColor)] rounded-full mt-auto px-12 py-4 text-[#695900] font-semibold active:bg-[var(--btnActiveColor)]">Verify
+            Now</button>
+        </div>
+
+        <div data-aos="fade-right" data-aos-duration="1000"
+          class="hidden uniBox shadow-xl flex-col relative gap-4 bg-[var(--secondaryColor)] w-full max-w-[350px] h-[450px] rounded-2xl pt-6 items-center p-8 md:flex">
+          <button
+            class="closeuniBtn hidden bg-[var(--themeColor)] rounded-full w-10 h-10  z-20 absolute top-0 right-0 text-2xl text-[var(--primaryColor)]">&times;</button>
+          <!-- Graduation Card -->
+          <img class="hidden absolute top-0 z-10 graduationCard w-screen h-[450px]" src="" alt="Graduation Degree">
+          <div class="outer_border">
+            <div class="iner_border">
+              <span>3.4</span>
+            </div>
+          </div>
+          <p class="font-bold text-white text-2xl mt-2">Graduation</p>
+          <p class="text-[#FFFFB5] px-8">Completed a Bachelor's degree in Computer Science from Government Boys Degree
+            College Skardu, affiliated with the University of Baltistan.-2024</p>
+          <button id="graduationVerify"
+            class="bg-[var(--primaryColor)] rounded-full mt-auto px-12 py-4 text-[#695900] font-semibold active:bg-[var(--btnActiveColor)]">Verify
+            Now</button>
+        </div>
+      </div>
+    </section>
+
+    <hr class="mt-12">
+    <!-- SKILLS Section -->
+    <section id="skillSection" class="skillSection mt-12 gap-4 flex flex-col items-center px-2">
+      <h1 class="font-bold text-3xl">SKILLS</h1>
+      <div
+        class="relative skillContainer w-full flex flex-col gap-4 justify-center items-center mt-4 flex-wrap px-4 md:flex-row md:gap-8">
+
+        <div
+          class="skillLeftBtn z-10 absolute -left-6 top-[180px] rightArrow w-full max-w-20  h-full max-h-20 bg-[#0e4b4b] shadow-2xl rounded-full flex justify-center items-center text-[var(--primaryColor)] text-4xl font-bold md:hidden">
+          &lt;</div>
+        <div
+          class="skillRightBtn z-10 absolute -right-6 top-[180px] rightArrow  w-full max-w-20  h-full max-h-20 bg-[#0e4b4b] shadow-2xl rounded-full flex justify-center items-center text-[var(--primaryColor)] text-4xl font-bold md:hidden">
+        </div>
+        <div
+          class="usingBox flex flex-col gap-4 bg-[var(--secondaryColor)] shadow-lg w-full min-w-[200px] max-w-[350px] h-[450px] rounded-2xl items-center justify-between p-8">
+          <p class="text-2xl font-bold text-white">Primary</p>
+          <div class="htmll w-full h-9 rounded-full bg-[#025F11]">
+            <div data-aos="fade-right" data-aos-duration="1000"
+              class="bar w-[90%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
+              <p class="text-base text-[#231E00] font-bold">HTML</p>
+            </div>
+          </div>
+
+          <div class="css w-full h-9 rounded-full bg-[#025F11]">
+            <div data-aos="fade-right" data-aos-duration="1000"
+              class="bar w-[80%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
+              <p class="text-base text-[#231E00] font-bold">CSS</p>
+            </div>
+          </div>
+
+          <div class="css w-full h-9 rounded-full bg-[#025F11]">
+            <div data-aos="fade-right" data-aos-duration="1000"
+              class="bar w-[75%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
+              <p class="text-base text-[#231E00] font-bold">Bootsrap</p>
+            </div>
+          </div>
+
+          <div class="javascript w-full h-9 rounded-full bg-[#025F11]">
+            <div data-aos="fade-right" data-aos-duration="1000"
+              class="bar w-[68%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
+              <p class="text-sm text-[#231E00] font-bold">JAVASCRIPT</p>
+            </div>
+          </div>
+
+          <div class="react w-full h-9 rounded-full bg-[#025F11]">
+            <div data-aos="fade-right" data-aos-duration="1000"
+              class="bar w-[80%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
+              <p class="text-sm text-[#231E00] font-bold">REACT</p>
+            </div>
+          </div>
+
+          <div class="git w-full h-9 rounded-full bg-[#025F11]">
+            <div data-aos="fade-right" data-aos-duration="1000"
+              class="bar w-[85%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
+              <p class="text-sm text-[#231E00] font-bold">PHP</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div
+          class="hidden learningBox shadow-xl flex-col gap-4 bg-[var(--secondaryColor)] w-full min-w-[200px] max-w-[350px] h-[450px] rounded-2xl items-center justify-between p-8 md:flex">
+          <p class="text-2xl font-bold text-white">Learning</p>
+          <div class="nodejs w-full h-9 rounded-full bg-[#025F11]">
+            <div data-aos="fade-right" data-aos-duration="1000"
+              class="bar w-[75%] bg-[#BFFF00] h-full rounded-full flex justify-center items-center">
+              <p class="text-base text-[#231E00] font-bold">Node JS</p>
+            </div>
+          </div>
+
+          <div class="css w-full h-9 rounded-full bg-[#025F11]">
+            <div data-aos="fade-right" data-aos-duration="1000"
+              class="bar w-[50%] bg-[#D9FF00] h-full rounded-full flex justify-center items-center">
+              <p class="text-base text-[#231E00] font-bold">MongoDB</p>
+            </div>
+          </div>
+
+          <div class="css w-full h-9 rounded-full bg-[#025F11]">
+            <div data-aos="fade-right" data-aos-duration="1000"
+              class="bar w-[40%] bg-[#D9FF00] h-full rounded-full flex justify-center items-center">
+              <p class="text-base text-[#231E00] font-bold">Java</p>
+            </div>
+          </div>
+
+          <div class="git w-full h-9 rounded-full bg-[#025F11]">
+            <div data-aos="fade-right" data-aos-duration="1000"
+              class="bar w-[81%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
+              <p class="text-sm text-[#231E00] font-bold">GIT</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div
+          class="hidden otherBox shadow-xl flex-col gap-4 bg-[var(--secondaryColor)] w-full min-w-[200px] max-w-[350px] h-[450px] rounded-2xl items-center justify-between p-8 md:flex">
+          <p class="text-2xl font-bold text-white">Other Skills</p>
+          <div class="nodejs w-full h-9 rounded-full bg-[#025F11]">
+            <div data-aos="fade-right" data-aos-duration="1000"
+              class="bar w-[95%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
+              <p class="text-base text-[#231E00] font-bold">Teaching</p>
+            </div>
+          </div>
+
+          <div class="css w-full h-9 rounded-full bg-[#025F11]">
+            <div data-aos="fade-right" data-aos-duration="1000"
+              class="bar w-[100%] bg-[#7BFF00] h-full rounded-full flex justify-center items-center">
+              <p class="text-base text-[#231E00] font-bold">Math</p>
+            </div>
+          </div>
+
+          <div class="javascript w-full h-9 rounded-full bg-[#025F11]">
+            <div data-aos="fade-right" data-aos-duration="1000"
+              class="bar w-[85%] bg-[#44FF00] h-full rounded-full flex justify-center items-center">
+              <p class="text-sm text-[#231E00] font-bold">PRESENTATION</p>
+            </div>
+          </div>
+
+          <div class="figma w-full h-9 rounded-full bg-[#025F11]">
+            <div data-aos="fade-right" data-aos-duration="1000"
+              class="bar w-[85%] bg-[#2BFF00] h-full rounded-full flex justify-center items-center">
+              <p class="text-sm text-[#231E00] font-bold">PROBLEM SOLVING</p>
+            </div>
+          </div>
+
+
+          <div class="git w-full h-9 rounded-full bg-[#025F11]">
+            <div data-aos="fade-right" data-aos-duration="1000"
+              class="bar w-[90%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
+              <p class="text-sm text-[#231E00] font-bold">TEAM WORK</p>
+            </div>
+          </div>
+        </div>
+        <div class="roundContainer flex gap-3 self-center md:hidden">
+          <div class="skillRound1 w-3 h-3 rounded-full bg-[var(--primaryColor)] border border-[--primaryColor]"></div>
+          <div class="skillRound2 w-3 h-3 rounded-full border border-[--primaryColor]"></div>
+          <div class="skillRound3 w-3 h-3 rounded-full border border-[--primaryColor]"></div>
+        </div>
+        <p class="mt-4">I am proficient in HTML, CSS, JavaScript, React, Bootstrap, and PHP, enabling me to create
+          responsive and visually appealing web applications. Currently, I am expanding my expertise by learning
+          Node.js, MongoDB, Java and GIT to strengthen my full-stack development skills. In
+          addition to technical skills, I excel in Teaching , and delivering impactful presentations.</p>
+      </div>
+    </section>
+
+    <hr class="mt-12">
+    <!-- PROJECTS Section -->
+    <section id="projectSection" class="projectSection mt-8 px-4 gap-8 flex flex-col items-center">
+      <h1 class="font-bold text-3xl text-center">PROJECTS PICTURES</h1>
+      <p class="text-center">Take a look at my portfolio to see a collection of my projects.</p>
+
+      <div class="projectContainer grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-[1200px] mt-8">
+
+        <!-- Card 1 -->
+        <div style="height: 100%;"
+          class="card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+          <img class="w-full h-auto" src="assets/project/proj1.png" alt="Project 1">
+        </div>
+
+        <!-- Card 2 -->
+        <div style="height: 100%;"
+          class="card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+          <img class="w-full h-auto" src="assets/project/proj5.png" alt="Project 2">
+        </div>
+
+        <!-- Card 3 -->
+        <div style="height: 100%;"
+          class="card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+          <img class="w-full h-auto" src="assets/project/proj6.png" alt="Project 3">
+        </div>
+
+      </div>
+    </section>
+
+
+    <hr class="mt-12">
+
+    <!-- PROJECTS VIDEO SECTION -->
+    <section id="projectSection" class="projectSection mt-8 px-4 gap-8 flex flex-col items-center">
+      <h1 class="font-bold text-3xl">PROJECTS VIDEO</h1>
+      <p>Take a look at my portfolio to see a collection of my projects Videos.</p>
+
+      <div class="projectContainer grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-[1200px] mt-8">
+
+        <div class="wrap relative">
+          <div class="hint absolute bottom-0 w-full h-full hover:transition rounded-2xl"></div>
+          <video class="rounded-2xl w-full max-w-[400px]" style="height: 80%;" controls>
+            <source src="assets/video/CMS.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <video class="rounded-2xl w-full max-w-[350px]" controls>
+          <source src="assets/video/Solar System.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <video class="rounded-2xl w-full max-w-[350px]" controls>
+          <source src="assets/videos/video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <video class="rounded-2xl w-full max-w-[350px]" controls>
+          <source src="assets/videos/video4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <video class="rounded-2xl w-full max-w-[350px]" controls>
+          <source src="assets/videos/video5.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <video class="rounded-2xl w-full max-w-[350px]" controls>
+          <source src="assets/videos/video6.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <hr class="mt-12">
+
+    <!-- CERTIFICATES SECTION -->
+    <section id="certificateSection" class="certificateSection mt-12 gap-4 flex flex-col items-center">
+      <h1 class="text-3xl font-bold">CERTIFICATES</h1>
+      <div
+        class="certificatesContainer flex flex-col gap-8 mt-8 md:grid  md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1">
+
+        <div
+          class="internn bg-[var(--secondaryColor)]  h-[400px] w-full max-w-[400px] shadow-lg flex flex-col items-center gap-4 rounded-lg p-4">
+          <div class="cont bg-[url('assets/intern.webp')] bg-no-repeat bg-center bg-contain w-full h-full">
+            <img class="w-full max-w-[350px]" style="height: 60%;" src="assets/intership.png" alt="">
+            <p class="mt-4">A heartfelt thank you to <b>Rhombix Technologies</b> for turning challenges into stepping
+              stones toward future achievements!</p>
+          </div>
+        </div>
+
+        <div
+          class="nustContainer bg-[var(--secondaryColor)] items-center w-full max-w-[400px] h-[400px] shadow-lg flex flex-col gap-4 rounded-lg p-4">
+          <img class="w-full max-w-[350px]" style="height: 60%;" src="assets/Cr1.jpg" alt="">
+          <p class="">Completed a 6-month basic computer course at the Challenger Center Institute, gaining
+            comprehensive knowledge.</p>
+        </div>
+
+
+        <div
+          class="ambassContainer bg-[var(--secondaryColor)] items-center w-full max-w-[400px] shadow-lg flex flex-col gap-4 rounded-lg p-4">
+          <img class="w-full max-w-[350px]" style="height: 60%;" src="assets/Clear_Cr.png" alt="">
+          <p>I completed my graduation in 2024 and am very happy to share my clearance certificate from Government Boys
+            Degree College Skardu, affiliated <span class="hidden hiddenText">with the University of Baltistan.This
+              4-year journey was beautiful and joyful for me because I learned many things about computer science.
+            </span>
+          </p>
+          <p class="cursor-pointer underline self-start" id="readMore">Read more</p>
+        </div>
+
+        <div
+          class="participate bg-[var(--secondaryColor)] items-center w-full max-w-[400px] h-[400px] shadow-lg flex flex-col gap-4 rounded-lg p-4">
+          <img class="w-full max-w-[350px]" src="" alt="">
+          <p class="">.</p>
+          </p>
+        </div>
+
+
+      </div>
+    </section>
+
+  </main>
+  <hr class="mt-12">
+  <footer id="contactSection" class="mt-4 gap-4 flex flex-col items-center w-full px-4 max-w-[1530px] mx-auto md:px-8">
+    <h1 class="text-3xl font-bold">CONTACT ME</h1>
+
+    <!-- Top Section -->
+    <div class="wrap flex flex-col gap-4 items-center w-full mt-4 lg:flex-row lg:justify-center lg:gap-8">
+      <div class="top flex flex-wrap gap-4 justify-center md:gap-8 lg:flex-col lg:justify-start lg:self-start lg:gap-8">
+        <div
+          class="home shadow-lg flex flex-col justify-center items-center p-2 w-[100px] h-[100px] bg-[var(--secondaryColor)] gap-2 rounded-lg">
+          <i class="fa-solid fa-house text-[var(--primaryColor)] text-2xl"></i>
+          <p class="text-[var(--primaryColor)] font-semibold text-xs">Skardu</p>
+        </div>
+
+        <a href="tel:+923554108322"
+          class="phone shadow-lg flex flex-col justify-center items-center w-[100px] h-[100px] bg-[var(--secondaryColor)] gap-2 p-2 rounded-lg">
+          <i class="fa-solid fa-phone text-[var(--primaryColor)] text-2xl"></i>
+          <button class="bg-[var(--primaryColor)] rounded-full px-2 text-[#695900] font-semibold text-xs">Call
+            me</button>
+        </a>
+
+        <a href="mailto:sakhawatalisakhi32@gmail.com"
+          class="mail shadow-lg flex flex-col justify-center items-center w-[100px] h-[100px] bg-[var(--secondaryColor)] gap-2 rounded-lg">
+          <i class="fa-solid fa-envelope text-[var(--primaryColor)] text-3xl"></i>
+        </a>
+      </div>
+
+      <!-- Form Section -->
+      <form class="bottom w-full flex flex-col gap-4 py-4 rounded-lg lg:w-[50%] lg:pt-0"
+        action="https://formspree.io/f/xbldyjoa" method="post">
+        <input
+          class="outline-none w-full px-4 py-4 bg-[var(--secondaryColor)] rounded-lg text-[#FFFFB5] placeholder-[#f5f5c077]"
+          type="text" required placeholder="Name *" name="Name">
+        <input
+          class="outline-none w-full px-4 py-4 bg-[var(--secondaryColor)] rounded-lg text-[#FFFFB5] placeholder-[#f5f5c077]"
+          type="email" required placeholder="Enter your email address *" name="Email Address">
+        <input
+          class="outline-none w-full px-4 py-4 bg-[var(--secondaryColor)] rounded-lg text-[#FFFFB5] placeholder-[#f5f5c077]"
+          type="tel" placeholder="Enter your phone number" name="Phone No">
+        <textarea class="outline-none bg-[var(--secondaryColor)] rounded-lg p-4 text-[#FFFFB5] placeholder-[#f5f5c077]"
+          rows="5" placeholder="Type your message here . . ." name="Message"></textarea>
+        <button
+          class="bg-[var(--primaryColor)] mt-4 w-fit self-center rounded-full px-12 py-4 text-[#695900] font-semibold active:bg-[var(--btnActiveColor)]">
+          Send Message
+        </button>
+      </form>
+    </div>
+
+    <!-- Footer Section -->
+    <hr class="w-full mt-8">
+    <div class="copyRightContainer flex flex-col items-center justify-between gap-4 px-4 w-full pt-4">
+
+      <div class="logoContainer flex mb-6 gap-8 justify-evenly w-fit lg:mr-12">
+        <a target="_blank" href="https://github.com/SakhawatSakhi"><i
+            class="fa-brands fa-github text-[var(--primaryColor)] text-5xl active:text-[var(--btnActiveColor)] lg:text-5xl"></i></a>
+        <a target="_blank"
+          href="https://wa.me/923412428786?text=Hi%20there!%20I%20would%20like%20to%20get%20in%20touch%20with%20you."><i
+            class="fa-brands fa-whatsapp text-[var(--primaryColor)] text-5xl active:text-[var(--btnActiveColor)] lg:text-5xl"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/sakhi786/"><img class="w-[44px] lg:w-[px]"
+            src="assets/icons/linkdin.svg" alt=""></a>
+      </div>
+      <p class="text-center mb-4 mx-4 text-sm lg:text-left">© 2024 Sakhawat Ali. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2025/01/30/11/20250130113317-0210GOFV.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+:root{
+    --primaryColor: #FFD700;
+    --themeColor: #012429;
+    --paragraphColor: #9E957C;
+    --fontColor: white;
+    --anchorColor: white;
+    --secondaryColor: #0a3336;
+    --btnActiveColor: #887200;
+
+}
+
+
+i{
+  transition: all 0.3s ease; 
+  cursor: pointer;
+
+}
+
+button{
+  transition: all 0.3s ease;
+}
+
+button:hover{
+  background-color: #dbb700;
+}
+i:hover {
+  font-size:xx-large; 
+  /* Increases font size on hover */
+}
+.animate {
+  animation: fadeIn 2s ease-in-out;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    
+}
+
+@layer base {
+  h1 {
+    @apply text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
+    color: var(--fontColor);
+  }
+  
+  h2 {
+    @apply text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
+    color: var(--fontColor);
+  }
+
+  h3 {
+    @apply text-xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl;
+    color: var(--fontColor);
+  }
+
+  h4 {
+    @apply text-lg font-semibold sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+    color: var(--fontColor);
+  }
+
+  h5 {
+    @apply text-base font-medium sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
+    color: var(--fontColor);
+  }
+
+  h6 {
+    @apply text-sm font-medium sm:text-base md:text-lg lg:text-xl xl:text-2xl;
+    color: var(--fontColor);
+  }
+
+  p {
+    @apply text-base lg:text-lg;
+
+    color: var(--paragraphColor);
+  }
+
+  a{
+    @apply text-base lg:text-lg;
+    color: var(--anchorColor);
+  }
+}
+/* Profile Picture */
+#Profile_img {
+  border: 5px solid yellow; 
+  border-radius: 50%; 
+  width: 150px; 
+  height: 150px; 
+  object-fit: cover;
+}
+
+/* Education Mark */
+.outer_border {
+  border: 5px solid transparent; 
+  border-radius: 50%;
+  padding: 10px; 
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: conic-gradient(rgb(221, 221, 65) 0% 50%, lightblue 50% 100%);
+}
+
+.iner_border {
+  border: 2px solid yellow; 
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f8f5f5;
+  position: relative;
+  background-color: black; 
+}
+
+
+
+

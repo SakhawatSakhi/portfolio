@@ -65,7 +65,8 @@
     <section id="heroSection"
       class="mt-28 heroSection flex flex-col gap-8 items-center md:flex-row md:gap-12 md:justify-between lg:px-8">
       <div class="top flex flex-col gap-8 items-center w-full max-w-[350px]">
-        <img src="assets/Profile.png" id="Profile_img" class="w-36 h-36 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 xl:w-48 xl:h-48" />
+        <img src="assets/Profile.png" id="Profile_img"
+          class="w-36 h-36 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 xl:w-48 xl:h-48" />
 
         <div class="logoContainer flex gap-12 px-8 items-center">
           <!-- GitHub Icon -->
@@ -125,6 +126,7 @@
         exceptional results.</p>
       <div
         class="relative educationContainer flex flex-col gap-4 justify-center mt-12 flex-wrap px-4 md:flex-row md:gap-8">
+
         <div
           class="educationleftBtn z-10 absolute -left-4 top-[180px] rightArrow w-full max-w-20  h-full max-h-20 bg-[#0e4b4b] shadow-2xl rounded-full flex justify-center items-center text-[var(--primaryColor)] text-4xl font-bold md:hidden">
           &lt;</div>
@@ -132,11 +134,13 @@
           class="educationRightBtn z-10 absolute -right-4 top-[180px] rightArrow  w-full max-w-20  h-full max-h-20 bg-[#0e4b4b] shadow-2xl rounded-full flex justify-center items-center text-[var(--primaryColor)] text-4xl font-bold md:hidden">
           ></div>
 
+
         <div data-aos="fade-right" data-aos-duration="1000"
           class="matrixBox relative flex flex-col gap-4 bg-[#0a3336] shadow-xl w-full max-w-[350px] h-[450px] rounded-2xl items-center p-8">
           <button
             class="closeMatricBtn hidden bg-[var(--themeColor)] rounded-full w-10 h-10  z-20 absolute top-0 right-0 text-2xl text-[var(--primaryColor)]">&times;</button>
           <img class="hidden absolute top-0  z-10 matricCard w-screen h-[450px]" src="assets/MrtCard.jpg" alt="">
+
           <div class="outer_border">
             <div class="iner_border">
               <span>57%</span>
@@ -185,152 +189,139 @@
             class="bg-[var(--primaryColor)] rounded-full mt-auto px-12 py-4 text-[#695900] font-semibold active:bg-[var(--btnActiveColor)]">Verify
             Now</button>
         </div>
+        <div class="roundContainer flex gap-3 self-center md:hidden">
+          <div class="eduRound1 w-3 h-3 rounded-full bg-[var(--primaryColor)] border border-[--primaryColor]"></div>
+          <div class="eduRound2 w-3 h-3 rounded-full border border-[--primaryColor]"></div>
+          <div class="eduRound3 w-3 h-3 rounded-full border border-[--primaryColor]"></div>
+        </div>
       </div>
     </section>
+
 
     <hr class="mt-12">
     <!-- SKILLS Section -->
     <section id="skillSection" class="skillSection mt-12 gap-4 flex flex-col items-center px-2">
       <h1 class="font-bold text-3xl">SKILLS</h1>
-      <div
-        class="relative skillContainer w-full flex flex-col gap-4 justify-center items-center mt-4 flex-wrap px-4 md:flex-row md:gap-8">
-
-        <div
-          class="skillLeftBtn z-10 absolute -left-6 top-[180px] rightArrow w-full max-w-20  h-full max-h-20 bg-[#0e4b4b] shadow-2xl rounded-full flex justify-center items-center text-[var(--primaryColor)] text-4xl font-bold md:hidden">
-          &lt;</div>
-        <div
-          class="skillRightBtn z-10 absolute -right-6 top-[180px] rightArrow  w-full max-w-20  h-full max-h-20 bg-[#0e4b4b] shadow-2xl rounded-full flex justify-center items-center text-[var(--primaryColor)] text-4xl font-bold md:hidden">
-        </div>
-        <div
-          class="usingBox flex flex-col gap-4 bg-[var(--secondaryColor)] shadow-lg w-full min-w-[200px] max-w-[350px] h-[450px] rounded-2xl items-center justify-between p-8">
-          <p class="text-2xl font-bold text-white">Primary</p>
-          <div class="htmll w-full h-9 rounded-full bg-[#025F11]">
-            <div data-aos="fade-right" data-aos-duration="1000"
-              class="bar w-[90%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
+      <div class="relative skillContainer w-full flex flex-col gap-4 justify-center items-center mt-4 flex-wrap px-4 md:flex-row md:gap-8">
+  
+          <div class="skillLeftBtn z-10 absolute -left-6 top-[180px] rightArrow w-full max-w-20  h-full max-h-20 bg-[#0e4b4b] shadow-2xl rounded-full flex justify-center items-center text-[var(--primaryColor)] text-4xl font-bold md:hidden">&lt;</div>
+         <div class="skillRightBtn z-10 absolute -right-6 top-[180px] rightArrow  w-full max-w-20  h-full max-h-20 bg-[#0e4b4b] shadow-2xl rounded-full flex justify-center items-center text-[var(--primaryColor)] text-4xl font-bold md:hidden">></div>
+     
+         <!-- Primary Section -->
+     <div class="usingBox flex flex-col gap-4 bg-[var(--secondaryColor)] shadow-lg w-full min-w-[200px] max-w-[350px] h-[450px] rounded-2xl items-center justify-between p-8">
+     <p class="text-2xl font-bold text-white">Primary</p>
+       <div class="htmll w-full h-9 rounded-full bg-[#025F11]">
+          <div data-aos="fade-right" data-aos-duration="1000" class="bar w-[90%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
               <p class="text-base text-[#231E00] font-bold">HTML</p>
-            </div>
           </div>
-
-          <div class="css w-full h-9 rounded-full bg-[#025F11]">
-            <div data-aos="fade-right" data-aos-duration="1000"
-              class="bar w-[80%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
+       </div>
+  
+       <div class="css w-full h-9 rounded-full bg-[#025F11]">
+          <div data-aos="fade-right" data-aos-duration="1000" class="bar w-[85%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
               <p class="text-base text-[#231E00] font-bold">CSS</p>
-            </div>
           </div>
-
-          <div class="css w-full h-9 rounded-full bg-[#025F11]">
-            <div data-aos="fade-right" data-aos-duration="1000"
-              class="bar w-[75%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
-              <p class="text-base text-[#231E00] font-bold">Bootsrap</p>
-            </div>
-          </div>
-
-          <div class="javascript w-full h-9 rounded-full bg-[#025F11]">
-            <div data-aos="fade-right" data-aos-duration="1000"
-              class="bar w-[68%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
+       </div>
+  
+       <div class="javascript w-full h-9 rounded-full bg-[#025F11]">
+          <div data-aos="fade-right" data-aos-duration="1000" class="bar w-[93%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
               <p class="text-sm text-[#231E00] font-bold">JAVASCRIPT</p>
-            </div>
           </div>
-
-          <div class="react w-full h-9 rounded-full bg-[#025F11]">
-            <div data-aos="fade-right" data-aos-duration="1000"
-              class="bar w-[80%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
+       </div>
+  
+       <div class="react w-full h-9 rounded-full bg-[#025F11]">
+          <div data-aos="fade-right" data-aos-duration="1000" class="bar w-[80%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
               <p class="text-sm text-[#231E00] font-bold">REACT</p>
-            </div>
           </div>
-
-          <div class="git w-full h-9 rounded-full bg-[#025F11]">
-            <div data-aos="fade-right" data-aos-duration="1000"
-              class="bar w-[85%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
+       </div>   
+  
+       <div class="css w-full h-9 rounded-full bg-[#025F11]">
+        <div data-aos="fade-right" data-aos-duration="1000" class="bar w-[88%] bg-[#D9FF00] h-full rounded-full flex justify-center items-center">
+            <p class="text-base text-[#231E00] font-bold">MY SQL</p>
+        </div>
+     </div>
+       
+       <div class="git w-full h-9 rounded-full bg-[#025F11]">
+          <div data-aos="fade-right" data-aos-duration="1000" class="bar w-[81%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
               <p class="text-sm text-[#231E00] font-bold">PHP</p>
-            </div>
           </div>
+       </div> 
+     </div>
+  
+     <!-- Learning section -->
+     <div class="hidden learningBox shadow-xl flex-col gap-4 bg-[var(--secondaryColor)] w-full min-w-[200px] max-w-[350px] h-[450px] rounded-2xl items-center justify-between p-8 md:flex">
+      <p class="text-2xl font-bold text-white">Learning</p>
+        <div class="nodejs w-full h-9 rounded-full bg-[#025F11]">
+           <div data-aos="fade-right" data-aos-duration="1000" class="bar w-[90%] bg-[#BFFF00] h-full rounded-full flex justify-center items-center">
+               <p class="text-base text-[#231E00] font-bold">Node JS</p>
+           </div>
         </div>
-
-
-        <div
-          class="hidden learningBox shadow-xl flex-col gap-4 bg-[var(--secondaryColor)] w-full min-w-[200px] max-w-[350px] h-[450px] rounded-2xl items-center justify-between p-8 md:flex">
-          <p class="text-2xl font-bold text-white">Learning</p>
-          <div class="nodejs w-full h-9 rounded-full bg-[#025F11]">
-            <div data-aos="fade-right" data-aos-duration="1000"
-              class="bar w-[75%] bg-[#BFFF00] h-full rounded-full flex justify-center items-center">
-              <p class="text-base text-[#231E00] font-bold">Node JS</p>
-            </div>
-          </div>
-
-          <div class="css w-full h-9 rounded-full bg-[#025F11]">
-            <div data-aos="fade-right" data-aos-duration="1000"
-              class="bar w-[50%] bg-[#D9FF00] h-full rounded-full flex justify-center items-center">
-              <p class="text-base text-[#231E00] font-bold">MongoDB</p>
-            </div>
-          </div>
-
-          <div class="css w-full h-9 rounded-full bg-[#025F11]">
-            <div data-aos="fade-right" data-aos-duration="1000"
-              class="bar w-[40%] bg-[#D9FF00] h-full rounded-full flex justify-center items-center">
-              <p class="text-base text-[#231E00] font-bold">Java</p>
-            </div>
-          </div>
-
-          <div class="git w-full h-9 rounded-full bg-[#025F11]">
-            <div data-aos="fade-right" data-aos-duration="1000"
-              class="bar w-[81%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
-              <p class="text-sm text-[#231E00] font-bold">GIT</p>
-            </div>
-          </div>
+   
+        <div class="react w-full h-9 rounded-full bg-[#025F11]">
+           <div data-aos="fade-right" data-aos-duration="1000" class="bar w-[60%] bg-[#D9FF00] h-full rounded-full flex justify-center items-center">
+               <p class="text-sm text-[#231E00] font-bold">MongoDB Atlas</p>
+           </div>
         </div>
-
-
-        <div
-          class="hidden otherBox shadow-xl flex-col gap-4 bg-[var(--secondaryColor)] w-full min-w-[200px] max-w-[350px] h-[450px] rounded-2xl items-center justify-between p-8 md:flex">
-          <p class="text-2xl font-bold text-white">Other Skills</p>
-          <div class="nodejs w-full h-9 rounded-full bg-[#025F11]">
-            <div data-aos="fade-right" data-aos-duration="1000"
-              class="bar w-[95%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
-              <p class="text-base text-[#231E00] font-bold">Teaching</p>
-            </div>
-          </div>
-
-          <div class="css w-full h-9 rounded-full bg-[#025F11]">
-            <div data-aos="fade-right" data-aos-duration="1000"
-              class="bar w-[100%] bg-[#7BFF00] h-full rounded-full flex justify-center items-center">
-              <p class="text-base text-[#231E00] font-bold">Math</p>
-            </div>
-          </div>
-
-          <div class="javascript w-full h-9 rounded-full bg-[#025F11]">
-            <div data-aos="fade-right" data-aos-duration="1000"
-              class="bar w-[85%] bg-[#44FF00] h-full rounded-full flex justify-center items-center">
-              <p class="text-sm text-[#231E00] font-bold">PRESENTATION</p>
-            </div>
-          </div>
-
-          <div class="figma w-full h-9 rounded-full bg-[#025F11]">
-            <div data-aos="fade-right" data-aos-duration="1000"
-              class="bar w-[85%] bg-[#2BFF00] h-full rounded-full flex justify-center items-center">
-              <p class="text-sm text-[#231E00] font-bold">PROBLEM SOLVING</p>
-            </div>
-          </div>
-
-
-          <div class="git w-full h-9 rounded-full bg-[#025F11]">
-            <div data-aos="fade-right" data-aos-duration="1000"
-              class="bar w-[90%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
-              <p class="text-sm text-[#231E00] font-bold">TEAM WORK</p>
-            </div>
-          </div>
-        </div>
-        <div class="roundContainer flex gap-3 self-center md:hidden">
-          <div class="skillRound1 w-3 h-3 rounded-full bg-[var(--primaryColor)] border border-[--primaryColor]"></div>
-          <div class="skillRound2 w-3 h-3 rounded-full border border-[--primaryColor]"></div>
-          <div class="skillRound3 w-3 h-3 rounded-full border border-[--primaryColor]"></div>
-        </div>
-        <p class="mt-4">I am proficient in HTML, CSS, JavaScript, React, Bootstrap, and PHP, enabling me to create
-          responsive and visually appealing web applications. Currently, I am expanding my expertise by learning
-          Node.js, MongoDB, Java and GIT to strengthen my full-stack development skills. In
-          addition to technical skills, I excel in Teaching , and delivering impactful presentations.</p>
+   
+        <div class="figma w-full h-9 rounded-full bg-[#025F11]">
+           <div data-aos="fade-right" data-aos-duration="1000" class="bar w-[75%] bg-[#77FF00] h-full rounded-full flex justify-center items-center">
+               <p class="text-sm text-[#231E00] font-bold">Java</p>
+           </div>
+        </div>     
+   
+        
+        <div class="git w-full h-9 rounded-full bg-[#025F11]">
+           <div data-aos="fade-right" data-aos-duration="1000" class="bar w-[81%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
+               <p class="text-sm text-[#231E00] font-bold">GIT</p>
+           </div>
+        </div> 
       </div>
-    </section>
+  
+      <!-- Other Skills Section -->
+      <div class="hidden otherBox shadow-xl flex-col gap-4 bg-[var(--secondaryColor)] w-full min-w-[200px] max-w-[350px] h-[450px] rounded-2xl items-center justify-between p-8 md:flex">
+          <p class="text-2xl font-bold text-white">Other Skills</p>
+            <div  class="nodejs w-full h-9 rounded-full bg-[#025F11]">
+               <div data-aos="fade-right" data-aos-duration="1000" class="bar w-[90%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
+                   <p class="text-base text-[#231E00] font-bold">Teaching</p>
+               </div>
+            </div>
+       
+            <div class="css w-full h-9 rounded-full bg-[#025F11]">
+               <div data-aos="fade-right" data-aos-duration="1000" class="bar w-[90%] bg-[#7BFF00] h-full rounded-full flex justify-center items-center">
+                   <p class="text-base text-[#231E00] font-bold">Math</p>
+               </div>
+            </div>
+       
+            <div class="javascript w-full h-9 rounded-full bg-[#025F11]">
+               <div data-aos="fade-right" data-aos-duration="1000" class="bar w-[85%] bg-[#44FF00] h-full rounded-full flex justify-center items-center">
+                   <p class="text-sm text-[#231E00] font-bold">PRESENTATION</p>
+               </div>
+            </div>
+       
+            <div class="figma w-full h-9 rounded-full bg-[#025F11]">
+               <div data-aos="fade-right" data-aos-duration="1000" class="bar w-[85%] bg-[#2BFF00] h-full rounded-full flex justify-center items-center">
+                   <p class="text-sm text-[#231E00] font-bold">PROBLEM SOLVING</p>
+               </div>
+            </div>     
+       
+            
+            <div class="git w-full h-9 rounded-full bg-[#025F11]">
+               <div data-aos="fade-right" data-aos-duration="1000" class="bar w-[90%] bg-[#00FF11] h-full rounded-full flex justify-center items-center">
+                   <p class="text-sm text-[#231E00] font-bold">TEAM WORK</p>
+               </div>
+            </div> 
+          </div>
+          <div class="roundContainer flex gap-3 self-center md:hidden">
+            <div class="skillRound1 w-3 h-3 rounded-full bg-[var(--primaryColor)] border border-[--primaryColor]"></div>
+            <div class="skillRound2 w-3 h-3 rounded-full border border-[--primaryColor]"></div>
+            <div class="skillRound3 w-3 h-3 rounded-full border border-[--primaryColor]"></div>
+          </div>
+          <p class="mt-4">I am proficient in HTML, CSS, JavaScript, React, Bootstrap, and PHP, enabling me to create
+            responsive and visually appealing web applications. Currently, I am expanding my expertise by learning
+            Node.js, MongoDB, Java and GIT to strengthen my full-stack development skills. In
+            addition to technical skills, I excel in Teaching , and delivering impactful presentations.</p>
+  </div>
+  </section>
+
 
     <hr class="mt-12">
     <!-- PROJECTS Section -->
@@ -373,29 +364,35 @@
 
         <div class="wrap relative">
           <div class="hint absolute bottom-0 w-full h-full hover:transition rounded-2xl"></div>
-          <video class="rounded-2xl w-full max-w-[350px]" controls>
-            <source src="assets/icons/Solar System.mp4" type="video/mp4">
+          <video class="rounded-2xl w-full max-w-[400px]" style="height: 80%;" controls>
+            <source src="assets/video/CMS.mp4" type="video/mp4">
+            Your browser does not support the video tag.
           </video>
         </div>
 
         <video class="rounded-2xl w-full max-w-[350px]" controls>
-          <source src="assets/icons/Solar System.mp4" type="video/mp4">
+          <source src="assets/video/Solar System.mp4" type="video/mp4">
+          Your browser does not support the video tag.
         </video>
 
         <video class="rounded-2xl w-full max-w-[350px]" controls>
           <source src="assets/videos/video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
         </video>
 
         <video class="rounded-2xl w-full max-w-[350px]" controls>
           <source src="assets/videos/video4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
         </video>
 
         <video class="rounded-2xl w-full max-w-[350px]" controls>
           <source src="assets/videos/video5.mp4" type="video/mp4">
+          Your browser does not support the video tag.
         </video>
 
         <video class="rounded-2xl w-full max-w-[350px]" controls>
           <source src="assets/videos/video6.mp4" type="video/mp4">
+          Your browser does not support the video tag.
         </video>
       </div>
     </section>
@@ -446,7 +443,6 @@
 
       </div>
     </section>
-
   </main>
   <hr class="mt-12">
   <footer id="contactSection" class="mt-4 gap-4 flex flex-col items-center w-full px-4 max-w-[1530px] mx-auto md:px-8">
